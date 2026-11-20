@@ -1,4 +1,4 @@
-name: '🧪'
+name: '馃И'
 on:
   push:
     branches: [master]
@@ -8,6 +8,7 @@ on:
     paths-ignore: [CHANGELOG.md]
 
 permissions:
+  contents: read
   actions: write
   issues: write
   pull-requests: write
