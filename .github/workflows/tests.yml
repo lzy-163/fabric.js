@@ -1,4 +1,4 @@
-name: '🧪'
+name: '馃И'
 on:
   push:
     branches: [master]
@@ -78,9 +78,9 @@ jobs:
       - uses: ./.github/actions/cached-install
         with:
           node-version: 22.x
+          install-system-deps: false
       - name: Build fabric.js
         uses: ./.github/actions/build-fabric-cached
-        # Playwright suggests against caching the browser install
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
       - name: Run Playwright tests
